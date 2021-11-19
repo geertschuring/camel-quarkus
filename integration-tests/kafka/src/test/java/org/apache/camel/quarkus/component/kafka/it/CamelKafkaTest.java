@@ -27,6 +27,7 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.apache.camel.quarkus.test.support.kafka.KafkaTestResource;
 import org.awaitility.Awaitility;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -37,6 +38,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @QuarkusTest
 @QuarkusTestResource(KafkaTestResource.class)
+@Disabled("https://github.com/apache/camel-quarkus/issues/3312")
 public class CamelKafkaTest {
 
     @Test

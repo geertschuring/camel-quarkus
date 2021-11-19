@@ -17,7 +17,9 @@
 package org.apache.camel.quarkus.component.kafka.it;
 
 import io.quarkus.test.junit.NativeImageTest;
+import org.junit.jupiter.api.Disabled;
 
 @NativeImageTest
+@Disabled("https://github.com/apache/camel-quarkus/issues/3312")
 public class CamelKafkaIT extends CamelKafkaTest {
 }
